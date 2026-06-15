@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  /* max-width: 1170px; a verifier avec fakhreddine */
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.nav-link {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav-icon a {
+  color: aqua;
+}
+
+.nav-icon i {
+  transition: all 0.3s linear;
+}
+
+.nav-icon i:hover {
+  transform: translateY(-10%);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 66px);
+  text-align: center;
+  background:
+    linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/main.jpeg) center/cover no-repeat;
+  color: white;
+}
+
+.hero h1 {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.hero p {
+  letter-spacing: 0.25rem;
+  width: 45rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero button {
+  padding: 0.9rem 1.6rem;
+  color: aqua;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.hero button:hover {
+  background-color: transparent;
+  border: 0.1rem solid white;
+  color: white;
+}
+
+/* about */
+
+.about {
+  padding: 4rem 5rem;
+}
+
+.about h2 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+}
+
+span {
+  color: aqua;
+}
+
+.about h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
+}
+
+.pos {
+  position: relative;
+  flex: 0 0 45%;
+}
+
+.about-flex1 {
+  flex: 0 0 45%;
+}
+
+.carre {
+  border: 0.5rem solid aqua;
+  width: 30rem;
+  height: 23rem;
+  position: absolute;
+  left: -1.5rem;
+  bottom: 1.5rem;
+  z-index: -1;
+}
+
+.about img {
+  width: 30rem;
+  height: 23rem;
+}
+
+.about p {
+  color: #617d98;
+  margin: 0.875rem 0rem;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+}
+
+.about-flex1 button {
+  padding: 0.6rem 0.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: aqua;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.25rem;
+}
+
+.about-flex1 button:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.services {
+  padding: 5rem 0;
+  background-color: aliceblue;
+}
+
+.service-container {
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.service {
+  display: flex;
+  flex: 0 0 32%;
+  gap: 1rem;
+}
+
+.service span {
+  background-color: aqua;
+  padding: 0.5rem;
+  display: inline-block;
+  color: #617d98;
+  align-self: flex-start;
+  font-size: 2rem;
+}
+
+.services h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+}
+
+/* featured */
+
+.featured {
+  padding: 5rem 0;
+}
+
+.featured h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1170px;
+  /* width: 95vw; */
+  margin: 0 auto;
+}
+
+.tour-card {
+  flex: 0 0 calc(33% - 2rem);
+  transition: all 0.4s linear;
+  cursor: pointer;
+  background-color: #f1f5f8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card img {
+  width: 100%;
+  display: block;
+}
+
+.tourimg-container {
+  position: relative;
+}
+
+.tourimg-container span {
+  position: absolute;
+  background-color: aqua;
+  color: black;
+  right: 0;
+  bottom: 0;
+  padding: 0.25rem 0.5rem;
+}
+
+.tour-title,
+.tour-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-info {
+  padding: 1.25rem 1.5rem;
+}
+
+#marge {
+  margin-top: 2rem;
+}
+
+.tour-title {
+  margin: 1rem 0;
+}
+
+.tour-footer {
+  margin-top: 1rem;
+}
+
+.height {
+  line-height: 1.5;
+}
+
+.tour-btn {
+  display: block;
+  width: 12rem;
+  margin: 5rem auto 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: aqua;
+  border: none;
+}
+
+.tour-btn:hover {
+  color: black;
+  background-color: #617d98;
+  cursor: pointer;
+}
+
+.contact-center {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.contact-center h2 {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+}
+
+.contact-center form {
+  flex: 1 1 45%;
+  max-width: 100%;
+  display: flex;
+  align-self: flex-start;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 0 1rem;
+}
+
+.contact-center div {
+  flex: 1 1 45%;
+  line-height: 1.5;
+}
+
+.mail {
+  flex: 1 1 auto;
+  padding: 0.3rem 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  border: transparent;
+}
+
+.contact {
+  background-color: aqua;
+  padding: 5rem 0;
+}
+
+/* picture */
+
+/* .picture {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pic {
+  flex: 0 0 25%;
+  position: relative;
+  background-color: rgb(54, 169, 207);
+  transition: all 0.3s ease-in;
+}
+
+.pic img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.pic:hover img {
+  opacity: 0.6;
+}
+
+.pic i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.pic:hover i {
+  opacity: 1;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* footer */
+
+.nav-footer,
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #617d98;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #617d98;
+  padding: 2rem 0;
+}

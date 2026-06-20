@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-nav {
+.nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,6 +141,7 @@ span {
   align-items: center;
   justify-content: space-between;
   max-width: 1170px;
+  flex-wrap: wrap;
 }
 
 .about-flex1 button {
@@ -169,7 +170,7 @@ span {
   margin: 0 auto;
   max-width: 1170px;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .service {
@@ -297,6 +298,7 @@ span {
   display: flex;
   max-width: 1170px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .contact-center h2 {
@@ -401,4 +403,40 @@ footer {
   text-align: center;
   background-color: #617d98;
   padding: 2rem 0;
+}
+
+/* media quiery */
+
+@media screen and (max-width: 600px) {
+  .nav-link,
+  .nav-icon {
+    display: none;
+  }
+  .menu {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: aqua;
+  }
+
+  .hero {
+    background: hwb(209 38% 40%);
+    padding: 0 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero div {
+    background-color: red;
+  }
+
+  .pos {
+    flex: 0 0 25%;
+  }
+}
+
+main {
+  padding: 2rem;
 }

@@ -63,9 +63,10 @@ a:hover {
   font-size: 4rem;
 }
 
+/* ajout du width */
 .hero p {
   letter-spacing: 0.25rem;
-  width: 45rem;
+  max-width: 45rem;
   margin-bottom: 1.25rem;
 }
 
@@ -85,7 +86,10 @@ a:hover {
 /* about */
 
 .about {
-  padding: 4rem 5rem;
+  padding: 4rem 0;
+  max-width: 1170px;
+  width: 95vw;
+  margin: 0 auto;
 }
 
 .about h2 {
@@ -112,11 +116,30 @@ span {
   flex: 0 0 45%;
 }
 
+/* modification de pos par about */
+.pos img {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.pos::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  border: 0.5rem solid aqua;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1; */
+}
+
 .about-flex1 {
   flex: 0 0 45%;
 }
 
-.carre {
+/* ajout du before */
+/* .carre::before {
   border: 0.5rem solid aqua;
   width: 30rem;
   height: 23rem;
@@ -124,12 +147,7 @@ span {
   left: -1.5rem;
   bottom: 1.5rem;
   z-index: -1;
-}
-
-.about img {
-  width: 30rem;
-  height: 23rem;
-}
+} */
 
 .about p {
   color: #617d98;
@@ -393,7 +411,7 @@ span {
 .nav-icon {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #617d98;
   padding: 0;
   margin-bottom: 2rem;
@@ -408,8 +426,8 @@ footer {
 /* media quiery */
 
 @media screen and (max-width: 600px) {
-  .nav-link,
-  .nav-icon {
+  header .nav-link,
+  header .nav-icon {
     display: none;
   }
   .menu {
@@ -421,7 +439,6 @@ footer {
 
   .hero {
     background: hwb(209 38% 40%);
-    padding: 0 4rem;
   }
 
   .hero h1 {
@@ -433,7 +450,51 @@ footer {
   }
 
   .pos {
-    flex: 0 0 25%;
+    flex: 1 1 auto;
+  }
+
+  .about-flex1 {
+    flex: 1 1 auto;
+  }
+
+  .hero p {
+    max-width: 35rem;
+  }
+
+  .pos::before {
+    display: none;
+  }
+
+  .service {
+    flex: 1 1 auto;
+  }
+
+  .service {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tour-card {
+    flex: 1 1 auto;
+    margin-bottom: 2rem;
+  }
+
+  .featured-container {
+    padding: 2rem;
+  }
+
+  .contact-center {
+    padding: 2rem;
+  }
+
+  .pic-container {
+    display: block;
+  }
+
+  .nav-footer,
+  .nav-icon {
+    padding: 0 6rem;
   }
 }
 

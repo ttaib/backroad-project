@@ -33,6 +33,11 @@ a:hover {
   gap: 0.4rem;
 }
 
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
 .nav-icon a {
   color: aqua;
 }
@@ -61,6 +66,10 @@ a:hover {
   margin-bottom: 0.75rem;
   text-transform: uppercase;
   font-size: 4rem;
+}
+
+.menu {
+  display: none;
 }
 
 /* ajout du width */
@@ -411,10 +420,18 @@ span {
 .nav-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   background-color: #617d98;
   padding: 0;
+}
+
+.nav-footer {
   margin-bottom: 2rem;
+}
+
+footer p {
+  margin-top: 2rem;
 }
 
 footer {
@@ -459,6 +476,10 @@ footer {
 
   .hero p {
     max-width: 35rem;
+  }
+
+  .menu {
+    display: block;
   }
 
   .pos::before {
